@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Layout.css";
+import styles from "./Layout.module.css";
 
 class Layout extends Component {
   state = {};
@@ -7,6 +7,7 @@ class Layout extends Component {
   render() {
     return (
       <div>
+        <span className={styles.test}>Color content goes here ...!</span>
         header
         {this.props.children}
         footer
